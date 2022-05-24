@@ -1,0 +1,164 @@
+---
+import Layout from '../components/Layout.astro';
+import Header from '../components/Header.vue';
+import Whoami from '../components/Whoami.astro';
+import Timeline from '../components/Timeline.astro';
+---
+
+<Layout title="Matteo Orlando">
+	<main>
+		<!-- <Header /> -->
+		<h1>Hi, i'm <span class="name-gradient">Matteo Orlando</span></h1>
+		
+		<!-- <p class="instructions"><strong>Your first mission:</strong> tweak this message to try our hot module reloading. Check the <code>src/pages</code> directory!</p> -->
+
+		<Whoami />
+
+		
+		<Timeline />
+
+	</main>
+</Layout>
+
+<style>
+	:root {
+		--color-border: #a1c8e9;
+		--astro-gradient: linear-gradient(0deg,#4F39FA, #DA62C4);
+		--link-gradient: linear-gradient(45deg, #4F39FA, #DA62C4 30%, var(--color-border) 60%);
+		--night-sky-gradient: linear-gradient(0deg, #392362 -33%, #431f69 10%, #30216b 50%, #1f1638 100%);
+		--matteo-gradient:linear-gradient(0deg, #26a1c0 0%, #2b9efd 33%, #26a1c0 66%, #2b9efd 99%);
+		--bkg-gradient:linear-gradient(45deg, #26a1c0 0%, #a1c8e9 30%, var(--color-border) 60%);
+	}
+
+	h2 {
+		margin: 0;
+		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+	}
+
+	h2 span {
+		display: inline-block;
+		transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+	}
+
+	code {
+		font-size: 0.875em;
+		border: 0.1em solid var(--color-border);
+		border-radius: 4px;
+		padding: 0.15em 0.25em;
+	}
+
+	main {
+		margin: auto;
+    padding: 1em;
+		max-width: 60ch;
+	}
+
+	.text-gradient {
+		font-weight: 900;
+		background-image: var(--astro-gradient);
+		-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+		background-size: 100% 200%;
+		background-position-y: 100%;
+		border-radius: 0.4rem;
+		animation: pulse 4s ease-in-out infinite;
+	}
+	.name-gradient {
+		font-weight: 900;
+		background-image: var(--matteo-gradient);
+		-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+		background-size: 200% 200%;
+		background-position-y: 100%;
+		border-radius: 0.4rem;
+		animation: pulse 4s ease-in-out infinite;
+	}
+
+	@keyframes pulse {
+		0%, 100% {
+			background-position-y: 0%;
+		}
+		50% {
+			background-position-y: 80%;
+		}
+	}
+
+	.instructions {
+		line-height: 1.8;
+		margin-bottom: 2rem;
+		background-image: var(--night-sky-gradient);
+		padding: 1.5rem;
+		border-radius: 0.4rem;
+		color: var(--color-bg);
+	}
+
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 1rem;
+		padding: 0;
+	}
+	.link-card-list{
+		display: block;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 1rem;
+		padding: 2;
+	}
+
+	.link-card {
+		list-style: none;
+		display: flex;
+		padding: 2rem;
+		background-image: var(--bkg-gradient);
+		background-size: 400%;
+		border-radius: 0.5rem;
+		background-position: 100%;
+		transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+	}
+
+	.link-card > a {
+		width: 100%;
+		text-decoration: none;
+		line-height: 1.4;
+		padding: 1em 1.3em;
+		border-radius: 0.35rem;
+		color: var(--text-color);
+		background-color: white;
+		opacity: 0.8;
+	}
+
+	.link-card:is(:hover, :focus-within) {
+		background-position: 0;
+	}
+
+	.link-card:is(:hover, :focus-within) h2 {
+		color: #4F39FA;
+	}
+
+	.link-card:is(:hover, :focus-within) h2 span {
+		transform: translateX(2px);
+	}
+
+	.heart {
+		display: inline-block;
+		color: #DA62C4;
+		animation: heartbeat 3s ease-in-out infinite;
+	}
+
+	@keyframes heartbeat {
+		0%,
+		50%,
+		100% {
+			transform: scale(1);
+		}
+		5% {
+			transform: scale(1.125);
+		}
+		10% {
+			transform: scale(1.05);
+		}
+		15% {
+			transform: scale(1.25);
+		}
+	}
+</style>

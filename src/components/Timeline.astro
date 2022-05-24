@@ -1,0 +1,92 @@
+<ul role="list" class="link-card-list">
+	<li class="link-card">
+	<h2>My career</h2>
+		<ul role="list" class="timeline-list">
+			<li class="timeline-item">
+			<p class="">  
+				<h4 class="">2012-2015</h4>
+				Bachelor degree in Physisc Engineering @ Politecnico di Torino
+				</p>
+			</li>
+			<li class="timeline-item">
+				<p class="">
+				<h4 class="">2015-2018</h4>
+				Master degree in ICT for Smart Societies with the thesis  
+				"Desing and development of a novel smart-meter for improved Smart Grid management"
+				</p>
+			</li>
+		</ul>
+	</li>
+</ul>
+<style>
+:root {
+		--color-border: #a1c8e9 ;
+		--astro-gradient: linear-gradient(0deg,#4F39FA, #DA62C4);
+		--link-gradient: linear-gradient(45deg, #4F39FA, #DA62C4 30%, var(--color-border) 60%);
+		--night-sky-gradient: linear-gradient(0deg, #392362 -33%, #431f69 10%, #30216b 50%, #1f1638 100%);
+		--matteo-gradient:linear-gradient(0deg, #26a1c0 0%, #2b9efd 33%, #26a1c0 66%, #2b9efd 99%);
+		--bkg-gradient:linear-gradient(45deg, #26a1c0 0%, #a1c8e9  30%, var(--color-border) 60%);
+	}
+	h2 {
+		margin: 0;
+		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+	}
+
+	.link-card {
+	  	margin: 1rem;
+		display: block;
+		padding: 2rem;
+		background-image: var(--bkg-gradient);
+		background-size: 400%;
+		border-radius: 0.5rem;
+		background-position: 100%;
+		transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+	}
+
+	.link-card > p {
+		width: 100%;
+		text-decoration: none;
+		line-height: 1.4;
+		padding: 1em 1.3em;
+		border-radius: 0.35rem;
+		color: var(--text-color);
+		background-color: white;
+		opacity: 0.8;
+	}
+
+	.link-card:is(:hover, :focus-within) {
+		background-position: 0;
+	}
+
+	.link-card:is(:hover, :focus-within) h2 {
+		color: #fff;
+	}
+
+	.link-card:is(:hover, :focus-within) h2 span {
+		transform: translateX(2px);
+	}
+	
+	.timeline-list{
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 1rem;
+	}
+	.timeline-item{
+		width: 100%;
+		text-decoration: none;
+		line-height: 1.4;
+		padding: 1em 1.3em;
+		border-radius: 0.35rem;
+		color: var(--text-color);
+		background-color: white;
+		opacity: 0.8;
+	}
+	.timeline-item:is(:hover, :focus-within) h4 {
+		color: #2b9efd ;
+	}
+	.timeline-item:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.74);
+}
+
+
+	</style>
