@@ -1,14 +1,17 @@
 ---
 import Layout from '../components/Layout.astro';
+import Presentation from '../components/Presentation.astro';
 import Header from '../components/Header.vue';
 import Whoami from '../components/Whoami.astro';
 import Timeline from '../components/Timeline.astro';
+//import Publications from '../components/Publications.astro';
+import Publications from '../components/Publications.vue';
 ---
 
 <Layout title="Matteo Orlando">
 	<main>
 		<!-- <Header /> -->
-		<h1>Hi, i'm <span class="name-gradient">Matteo Orlando</span></h1>
+		<Presentation/>
 		
 		<!-- <p class="instructions"><strong>Your first mission:</strong> tweak this message to try our hot module reloading. Check the <code>src/pages</code> directory!</p> -->
 
@@ -16,6 +19,7 @@ import Timeline from '../components/Timeline.astro';
 
 		
 		<Timeline />
+		<Publications/>
 
 	</main>
 </Layout>
@@ -50,7 +54,7 @@ import Timeline from '../components/Timeline.astro';
 	main {
 		margin: auto;
     padding: 1em;
-		max-width: 60ch;
+		max-width: 80ch;
 	}
 
 	.text-gradient {

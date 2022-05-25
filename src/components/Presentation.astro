@@ -1,0 +1,100 @@
+---
+	import avatar from '../images/avatar.png';
+---
+
+<div class="presentation-grid">
+	<div class="presentation-text">
+		<h1>Hi, i'm <span class="name-gradient">Matteo Orlando</span></h1>
+	</div>
+	<div class="presentaion-avatar">
+		<img src={avatar}>
+	</div>
+</div>
+<style>
+	:root {
+		--color-border: #a1c8e9;
+		--astro-gradient: linear-gradient(0deg, #4F39FA, #DA62C4);
+		--link-gradient: linear-gradient(45deg, #4F39FA, #DA62C4 30%, var(--color-border) 60%);
+		--night-sky-gradient: linear-gradient(0deg, #392362 -33%, #431f69 10%, #30216b 50%, #1f1638 100%);
+		--matteo-gradient: linear-gradient(0deg, #26a1c0 0%, #2b9efd 33%, #26a1c0 66%, #2b9efd 99%);
+		--bkg-gradient: linear-gradient(45deg, #26a1c0 0%, #a1c8e9 30%, var(--color-border) 60%);
+	}
+
+	h2 {
+		margin: 0;
+		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+	}
+
+	h2 span {
+		display: inline-block;
+		transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+	}
+
+	code {
+		font-size: 0.875em;
+		border: 0.1em solid var(--color-border);
+		border-radius: 4px;
+		padding: 0.15em 0.25em;
+	}
+
+	main {
+		margin: auto;
+		padding: 1em;
+		max-width: 60ch;
+	}
+
+	.text-gradient {
+		font-weight: 900;
+		background-image: var(--astro-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 100% 200%;
+		background-position-y: 100%;
+		border-radius: 0.4rem;
+		animation: pulse 4s ease-in-out infinite;
+	}
+
+	.name-gradient {
+		font-weight: 900;
+		background-image: var(--matteo-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 200% 200%;
+		background-position-y: 100%;
+		border-radius: 0.4rem;
+		animation: pulse 4s ease-in-out infinite;
+	}
+
+	@keyframes pulse {
+
+		0%,
+		100% {
+			background-position-y: 0%;
+		}
+
+		50% {
+			background-position-y: 80%;
+		}
+	}
+
+	.presentation-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(9ch, 1fr));
+		gap: 1rem;
+		padding: 0;
+	}
+
+	.presentation-text {
+
+	}
+
+	.presentaion-avatar>img {
+		background-size: cover;
+		background-position: center;
+		border-radius: 50%;
+		border: 0.1em solid var(--color-border);
+		box-shadow: 0 0.5em 1em -0.1em var(--color-border);
+		width: 20vw;
+		min-width: 160px;
+	}
+</style>
