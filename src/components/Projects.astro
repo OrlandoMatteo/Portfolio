@@ -1,0 +1,118 @@
+<ul role="list" class="link-card-list">
+	<li class="link-card">
+	<h2>Other projects I worked on</h2>
+		<ul role="list" class="timeline-list">
+			<li class="timeline-item">
+			<p class="">  
+				<h4 class="">Ruritage</h4>
+				<h6>2018-2021</h6>
+				The RURITAGE project turns rural areas into laboratories to demonstrate natural and cultural heritage as an engine for regeneration.
+				I was in charge of the development of the first version of the Ruritage Resource Ecosystem. This tool consisted in a full stack application that stored geographical data and metadata about the partecipants of the project and make it available to the public for visualization.
+				More info at <a href="https://ruritage-ecosystem.eu/" target="_blank">ruritage-ecosystem.eu</a>	
+			</p>
+			</li>
+			<li class="timeline-item">
+				<p class="">
+				<h4 class="">Development of a wearable IoT device for Covid-19 early diagnosis.</h4>
+				<h6>2021</h6>
+				Cotutor of the thesis. More info at <a href="https://webthesis.biblio.polito.it/18004" target="_blank">webthesis.biblio.polito.it</a>
+				</p>
+			</li>
+			<li class="timeline-item">
+				<p class="">
+				<h4 class="">Development of a wearable device for monitoring vital parameters: SpO2, heart rate and temperature. </h4>
+				<h6>2021</h6>
+				Cotutor of the thesis. More info at <a href="https://webthesis.biblio.polito.it/17594/" target="_blank">webthesis.biblio.polito.it</a>
+				</p>
+			</li>
+			<li class="timeline-item">
+				<p class="">
+				<h4 class="">Design and development of distributed software platform to gather, manage and visualize multimedia clinical files </h4>
+				<h6>2021</h6>
+				Cotutor of the thesis. More info at <a href="https://webthesis.biblio.polito.it/19637/" target="_blank">webthesis.biblio.polito.it</a>
+				</p>
+			</li>
+		</ul>
+	</li>
+</ul>
+<style>
+:root {
+		--color-border: #a1c8e9 ;
+		--astro-gradient: linear-gradient(0deg,#4F39FA, #DA62C4);
+		--link-gradient: linear-gradient(45deg, #4F39FA, #DA62C4 30%, var(--color-border) 60%);
+		--night-sky-gradient: linear-gradient(0deg, #392362 -33%, #431f69 10%, #30216b 50%, #1f1638 100%);
+		--matteo-gradient:linear-gradient(0deg, #26a1c0 0%, #2b9efd 33%, #26a1c0 66%, #2b9efd 99%);
+		--bkg-gradient:linear-gradient(45deg, #26a1c0 0%, #a1c8e9  30%, var(--color-border) 60%);
+	}
+	h2 {
+		margin: 0;
+		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+	}
+
+	.link-card {
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	  	margin-left: 0rem;
+		margin-right: 0rem;
+		display: block;
+		padding: 1rem;
+		background-image: var(--bkg-gradient);
+		background-size: 400%;
+		border-radius: 0.5rem;
+		background-position: 100%;
+		transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+	}
+
+	.link-card > p {
+		width: 100%;
+		text-decoration: none;
+		line-height: 1.4;
+		padding: 1em 1.3em;
+		border-radius: 0.35rem;
+		color: var(--text-color);
+		background-color: white;
+		opacity: 0.8;
+	}
+
+	.link-card:is(:hover, :focus-within) {
+		background-position: 0;
+	}
+
+	.link-card:is(:hover, :focus-within) h2 {
+		color: #fff;
+	}
+
+	.link-card:is(:hover, :focus-within) h2 span {
+		transform: translateX(2px);
+	}
+	
+	.timeline-list{
+		display: block;
+		gap: 1rem;
+	}
+	.timeline-item{
+		width: 100%;
+		text-decoration: none;
+		line-height: 1.4;
+		padding: 1em 1.3em;
+		border-radius: 0.35rem;
+		color: var(--text-color);
+		background-color: white;
+		opacity: 0.8;
+		margin-top: 1rem;
+	}
+	.timeline-item > h6{
+		color:grey;
+	}
+	.timeline-item:is(:hover, :focus-within) h4 {
+		color: #26a1c0 ;
+	}
+	.timeline-item:is(:hover, :focus-within) h6 {
+		color: #a1c8e9 ;
+	}
+	.timeline-item:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.74);
+}
+
+
+	</style>

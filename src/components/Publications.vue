@@ -16,7 +16,12 @@ import { Disclose } from "agnostic-vue";
                       <Disclose style="font-size:smaller" title="Abstract">
                     In this paper, we present a novel distributed software infrastructure to foster new services in smart grids with particular emphasis on supporting self-healing distribution systems. This infrastructure exploits the rising Internet-of-Things paradigms to build and manage an interoperable peer-to-peer network of our prototype smart meters, also presented in this paper. The proposed three-phase smart meter, called 3-SMA, is a low cost and open-source Internet-connected device that provides features for self-configuration. In addition, it selectively run on-board-algorithms for smart grid management depending on its deployment on the distribution network. Finally, we present the experimental results of Hardware-In-the-Loop simulations we performed.
                   </Disclose>
+
             </p>
+                <h5><a href="https://ieeexplore.ieee.org/abstract/document/8495717">More info here
+                <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+</svg></span></a></h5>
           </li>
           <li class="publication-item">
             <p>
@@ -26,6 +31,11 @@ import { Disclose } from "agnostic-vue";
                     Following the Smart Grid view, current energy generation systems based on fossil fuels will be replaced with renewable energy sources. Photovoltaic (PV) is currently considered the most promising technology, due to decreasing costs of the devices and to the limited invasiveness in existing infrastructures, that make PV installations quite common urban buildings' roofs. To maximise both power production and Return Of Investment (ROI) of PV installations, new techniques and methodologies should be applied to limit sources of inefficiencies, like shading and power losses due to an incorrect installation. In this paper, we propose a novel solution for an optimal configuration and placement of PV systems in buildings' roofs. Given a number of alternative configurations and a roof of interest, it combines detailed geographic and irradiance information to determine the optimal PV installation, by maximizing both power production and ROI. Our simulation results on two real-world roofs demonstrate an improvement on power generation up to 23% w.r.t. standard compact installations. These results also highlight that a cost analysis, often ignored by standard installation strategies, is nonetheless necessary to guarantee optimal results in terms of PV production and revenue.
                   </Disclose>
             </p>
+                  <h5><a href="https://ieeexplore.ieee.org/abstract/document/9202819">More info here
+                  <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+</svg></span>
+</a></h5>
           </li>
           <li class="publication-item">
             <p>
@@ -35,6 +45,10 @@ import { Disclose } from "agnostic-vue";
                     PhotoVoltaic (PV) installations are a widespread source of renewable energy, and are quite common urban buildings’ roofs. To soften both the initial investment and the recurrent maintenance costs, the current market trends delegate the construction of PV installations to Energy Aggregators, i.e., grouping of consumers and producers that act as a single entity to satisfy local energy demand and to sell the surplus energy to the grid. In this perspective, PV installations can be designed with a larger perspective, i.e., at district level, to maximize power production not of a single building but rather of a number of blocks of a city. This implies new challenges, including efficient data management (the covered area can be squared kilometers wide) and optimal PV installation (the number of PV modules can be in the order of hundreds or even thousands). This paper proposes a framework to combine detailed geographic and irradiance information to determine an optimal PV installation over a district, by maximizing both power production and economic convenience. Our simulation results run on a real-world district prove that the framework allows an advanced evaluation of costs and benefit, that can be used by Energy Aggregators to design a new PV installation, and demonstrate an improvement on power generation up to 20% w.r.t. standard installations.
                   </Disclose>
             </p>
+                   <h5><a href="https://ieeexplore.ieee.org/abstract/document/9529470">More info here
+                   <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+</svg></span></a></h5>
           </li>
           <li class="publication-item">
             <p>
@@ -43,7 +57,12 @@ import { Disclose } from "agnostic-vue";
                       <Disclose style="font-size:smaller" title="Abstract">
                     Electric infrastructures have been pushed forward to handle tasks they were not originally designed to perform. To improve reliability and efficiency, state-of-the-art power grids include improved security, reduced peak loads, increased integration of renewable sources, and lower operational costs. In this framework“, smart grids” are built around bidirectional communication technologies, where “smart meters” communicate with all other entities and collect data from the power grid, offering specific features to each actor playing in the energy marketplace. In this paper, to overcome some of the challenges raised by smart grids and smart meters, we propose a distributed metering infrastructure which provides bidirectional communication, self-configuration, and auto-update capabilities. Our 3-phase smart meters follow the basics Internet-of-Things principles and have the ability to run, either on-board or distributed on the network, multiple algorithms for smart grid management. These algorithms can be freely added, updated, or removed on-the-fly thanks to the auto-update feature of the system. Moreover, to reduce costs and improve scalability, we prove that it is possible to implement our smart meters using only off-the-shelf and inexpensive hardware devices. A digital real-time simulator (i.e., Opal-RT) has been used to assess the capabilities of both the infrastructure and the meter. Our experimental analysis shows that the latency introduced by the data transmission over the Internet is compliant with the limits imposed by the IEC 61850 standard. As a consequence, our architecture does not affect the operational status of the smart grid, making it a viable solution to support the deployment of novel services.
                   </Disclose>
+                  
             </p>
+                   <h5><a href="https://ieeexplore.ieee.org/abstract/document/9659809">More info here
+                   <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+</svg></span></a></h5>
           </li>
           <li class="publication-item">
             <p>
@@ -53,6 +72,10 @@ import { Disclose } from "agnostic-vue";
                     The aim of this paper is to form an analytical and critical framework to consider the uses of digital platforms in heritage field and practices and to provide methodologies for user profiling based on the identification of local stakeholders and their needs. Within the context of the EU H2020 research project RURITAGE, a resource ecosystem (RRE) of various integrated tools was created for shaping and addressing heritage-led knowledge and bottom-up strategies of local regeneration. More specifically, the RRE was conceived to provide local stakeholders with new methodologies and user-friendly tools based on bottom-up processes for identifying and actioning heritage and territorial features and turning these cultural natural values—as well as the gaps—into opportunities. This paper undertakes a comparative analysis of the integration of tools in other digital platforms for heritage practices and/or regeneration processes to explore the holistic approach to heritage knowledge and the effectiveness in engaging local stakeholders. In addition, it frames methodologies for local stakeholder and related needs identification. Through this comparative analysis among digital heritage platforms and through user profiling to target the needs of users by using the RRE as a case study, the paper explores the challenge of helping communities to shape a local heritage-led collaborative knowledge supported by integrated and user-friendly digital tools and to activate them in preserving and exploiting their territories and building shared and plural cultural heritage understandings, considering cultural heritage as a social need.
                   </Disclose>
             </p>
+             <h5><a href="https://www.mdpi.com/2071-1050/14/8/4575">More info here
+             <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+</svg></span></a></h5>
           </li>
       </ul>
     </li>
@@ -162,5 +185,9 @@ h2 {
 }
 Disclose {
   font-size: smaller;
+}
+.icon {
+   vertical-align: middle;
+  display: inline-block;
 }
 </style>
