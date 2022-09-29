@@ -1,13 +1,54 @@
-<li class="link-card">
-  <h2 class="">What I studied</h2>
-	<div class="item">
-  <p class="">
-    I received B.Sc Degree in Physics Engineering in 2015 and a M.Sc. degree in
-    ICT for Smart Societies in 2018 with a thesis focused on designing and
-    development of a self-configuring IoT smart-meter for monitoring the power
-    grids and enabling novel services. Since October 2018, I joined the EDA
-    group as a research assistant. I started my PhD in November 2019 focusing my
-    research in the optimization of the placement of PV modules in the context of Renewable Energy Community.
-  </p></div>
-</li>
+---
+const mainSkills = [
+    "Python",
+    "REST API",
+    "MQTT",
+    "Microservices",
+    "IoT",
+    "Smart-Grid",
+];
+const otherSkills = [
+    "Javascript",
+    "Astro",
+    "Vue",
+    "HTML & CSS",
+    "MongoDB",
+    "Docker",
+    "Git",
+];
+---
 
+<li class="link-card">
+    <h2 class="">What I studied</h2>
+    <div class="item">
+        <p class="">
+            I received B.Sc Degree in Physics Engineering in 2015 and a M.Sc.
+            degree in ICT for Smart Societies in 2018 with a thesis focused on
+            designing and development of a self-configuring IoT smart-meter for
+            monitoring the power grids and enabling novel services. Since
+            October 2018, I joined the EDA group as a research assistant. I
+            started my PhD in November 2019 focusing my research in the
+            optimization of the placement of PV modules in the context of
+            Renewable Energy Community.
+        </p>
+    </div>
+    <div class="item">
+        <h4>Technical skills</h4>
+        <h5>Main</h5>
+        <div class="container">
+            {
+                mainSkills.map((skillName) => (
+                    <div class="skill primary">{skillName}</div>
+                ))
+            }
+        </div>
+        <h5>Other</h5>
+        <div class="container">
+            {
+                otherSkills.map((skillName) => (
+                    <div class="skill secondary">{skillName}</div>
+                ))
+            }
+        </div>
+    </div>
+</li>
