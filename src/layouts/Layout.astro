@@ -26,7 +26,7 @@ const { title } = Astro.props as Props;
                 --color-text: hsl(12, 5%, 4%);
                 --color-bg: #f6f6f6;
                 --primary: #fb988e;
-                --secondary: #00203fff;
+                --secondary: #114171;
             }
 
             html {
@@ -84,21 +84,8 @@ const { title } = Astro.props as Props;
                 padding: 1.5rem;
             }
             .subtitle {
+                color: var(--secondary);
                 padding: 0.3rem;
-                background: linear-gradient(
-                    45deg,
-                    var(--secondary) -1.72%,
-                    var(--primary) 99.78%
-                );
-                background-size: auto;
-                background-clip: border-box;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                background-clip: text;
-                text-fill-color: transparent;
-                background-size: 150% 150%;
-                -webkit-animation: gradient 15s ease infinite;
-                animation: gradient 15s ease infinite;
             }
 
             .link-card {
@@ -189,7 +176,6 @@ const { title } = Astro.props as Props;
                 font-size: smaller;
                 padding: 0.2rem 0.8rem 0.2rem 0.8rem;
                 border-radius: 1rem;
-                width: 8vw;
                 text-align: center;
                 color: white;
                 background-color: var(--primary);
@@ -204,6 +190,10 @@ const { title } = Astro.props as Props;
                 top: 0px;
                 z-index: 1;
                 background-color: #f6f6f6;
+                display: flex;
+                gap: 1rem;
+                padding: 0.5rem 0 0.5rem 0;
+                margin-top: 1rem;
             }
             .nav-item {
                 display: inline;
@@ -220,6 +210,26 @@ const { title } = Astro.props as Props;
             .nav-item:is(:hover, :focus-within) {
                 box-shadow: 2px 4px 6px -1px var(--secondary),
                     2px 2px 4px -2px #054686;
+            }
+            .openbtn {
+                display: none;
+            }
+            @media screen and (max-width: 910px) {
+                .openbtn {
+                    display: block;
+                    border: 0;
+                    width: 100%;
+                    border-radius: 0.5rem;
+                    background: linear-gradient(
+                        -45deg,
+                        #ffffff 0%,
+                        var(--primary) 100%
+                    );
+                    color: var(--secondary);
+                }
+                .navbar {
+                    display: none;
+                }
             }
         </style>
     </body>

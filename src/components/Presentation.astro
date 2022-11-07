@@ -105,24 +105,33 @@ import avatar from "/avatar.jpg";
     }
 
     .presentation-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(9ch, 1fr));
-        gap: 1rem;
-        padding: 0;
+        display: flex; /* or inline-flex */
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding-bottom: 0.5rem;
     }
 
     .presentation-text {
+        flex: 0.7;
     }
 
+    .presentaion-avatar {
+        margin: auto;
+    }
     .presentaion-avatar img {
         background-size: cover;
         background-position: center;
         border-radius: 50%;
-        border: 0.1em solid var(--color-border);
-        box-shadow: 0 0.5em 1em -0.1em var(--color-border);
+        border: 0em solid var(--primary);
+        box-shadow: 0 0.1em 1em -0.1em var(--secondary);
         width: 20vw;
         min-width: 160px;
         max-width: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
     }
     h1 {
         font-size: 3.5rem;
