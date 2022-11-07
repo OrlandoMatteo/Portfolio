@@ -1,20 +1,20 @@
 ---
-import Paper from './Paper.astro'
+import Paper from "./Paper.astro";
 //const papers = await Astro.glob("../pages/publications/*.md");
-import { papers } from '../publications.json'
+import { papers } from "../publications.json";
 ---
 
-    <li class="link-card">
-      <h2>My Publications</h2>
+<li id="PUBLICATIONS" class="link-card">
+    <h2 class="subtitle">My Publications</h2>
 
-        {papers.map(paper=> (
-        <Paper title={paper.title} 
-        location={paper.location}
-        href={paper.href}
-        abstract={paper.abstract}
-        >
-        </Paper>
-        ))}
-
-	</li>
-
+    {
+        papers.map((paper) => (
+            <Paper
+                title={paper.title}
+                location={paper.location}
+                href={paper.href}
+                abstract={paper.abstract}
+            />
+        ))
+    }
+</li>

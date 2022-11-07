@@ -1,11 +1,12 @@
 ---
-import Layout from "../components/Layout.astro";
+import Layout from "../layouts/Layout.astro";
 import Presentation from "../components/Presentation.astro";
 import Whoami from "../components/Whoami.astro";
 import Timeline from "../components/Timeline.astro";
 import Publications from "../components/Publications.astro";
 //import Publications from '../components/Publications.vue';
 import Projects from "../components/Projects.astro";
+import Navbar from "../components/Navbar.astro";
 ---
 
 <Layout title="Matteo Orlando">
@@ -13,6 +14,7 @@ import Projects from "../components/Projects.astro";
         <!-- <Header /> -->
         <Presentation />
 
+        <Navbar />
         <!-- <p class="instructions"><strong>Your first mission:</strong> tweak this message to try our hot module reloading. Check the <code>src/pages</code> directory!</p> -->
 
         <Whoami />
@@ -21,138 +23,3 @@ import Projects from "../components/Projects.astro";
         <Projects />
     </main>
 </Layout>
-
-<style is:global>
-    :root {
-        --color-border: #a1c8e9;
-        --astro-gradient: linear-gradient(0deg, #4f39fa, #da62c4);
-        --link-gradient: linear-gradient(
-            45deg,
-            #4f39fa,
-            #da62c4 30%,
-            var(--color-border) 60%
-        );
-        --night-sky-gradient: linear-gradient(
-            0deg,
-            #392362 -33%,
-            #431f69 10%,
-            #30216b 50%,
-            #1f1638 100%
-        );
-        --matteo-gradient: linear-gradient(
-            0deg,
-            #26a1c0 0%,
-            #2b9efd 33%,
-            #26a1c0 66%,
-            #2b9efd 99%
-        );
-        --bkg-gradient: linear-gradient(
-            45deg,
-            #26a1c0 0%,
-            #a1c8e9 30%,
-            var(--color-border) 60%
-        );
-    }
-    main {
-        max-width: 100ch;
-        margin: auto;
-        padding: 1.5rem;
-    }
-    h2 {
-        transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-    }
-
-    .link-card {
-        margin: 0.5rem 0 0.5rem 0;
-        display: block;
-        padding: 1rem;
-        background-image: var(--bkg-gradient);
-        background-size: 400%;
-        border-radius: 0.5rem;
-        background-position: 100%;
-        transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-    }
-
-    .link-card > p {
-        width: 100%;
-        text-decoration: none;
-        line-height: 1.4;
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-        padding-top: 0;
-        padding-bottom: 0;
-        border-radius: 0.35rem;
-        color: var(--text-color);
-        background-color: white;
-        opacity: 0.8;
-    }
-
-    .link-card:is(:hover, :focus-within) {
-        background-position: 0;
-    }
-
-    .link-card:is(:hover, :focus-within) h2 {
-        color: #fff;
-    }
-
-    .link-card:is(:hover, :focus-within) h2 span {
-        transform: translateX(2px);
-    }
-
-    .item {
-        text-decoration: none;
-        line-height: 1.4;
-        border-radius: 0.35rem;
-        color: var(--text-color);
-        background-color: white;
-        opacity: 0.8;
-        padding-left: 0.8rem;
-        padding-right: 0.8rem;
-        padding-top: 0;
-        margin: 0 0.5rem 0.5rem 0;
-    }
-    .item > p {
-        padding: 1rem;
-        margin-top: 0%;
-    }
-    h4 {
-        margin: 0rem;
-        padding-top: 1.2rem;
-    }
-    h5 {
-        color: gray;
-        margin: 0rem;
-        padding: 0.2rem;
-    }
-    details {
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-    }
-    .container {
-        display: flex; /* or inline-flex */
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        padding-bottom: 0.5rem;
-    }
-    .skill.primary {
-        font-size: smaller;
-        padding: 0.2rem 0.8rem 0.2rem 0.8rem;
-        border-radius: 1rem;
-        text-align: center;
-        color: white;
-        background-color: #113773;
-        margin: 0.2rem;
-    }
-    .skill.secondary {
-        font-size: smaller;
-        padding: 0.2rem 0.8rem 0.2rem 0.8rem;
-        border-radius: 1rem;
-        width: 10vh;
-        text-align: center;
-        color: white;
-        background-color: #27a0d1;
-        margin: 0.2rem;
-    }
-    span {
-    }
-</style>

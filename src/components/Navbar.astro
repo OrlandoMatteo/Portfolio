@@ -1,0 +1,25 @@
+---
+const items = ["Whoami", "Career", "Publications", "Projects"];
+---
+
+<div class="navbar container">
+    {
+        items.map((item) => (
+            <div id={item} class="nav-item">
+                <h3>{item}</h3>
+            </div>
+        ))
+    }
+</div>
+
+<script>
+    function goTo() {
+        document.getElementById(this.id.toUpperCase()).scrollIntoView();
+        window.scrollBy(0, -80);
+    }
+    var items = document.getElementsByClassName("nav-item");
+
+    Array.from(items).forEach(function (item) {
+        item.addEventListener("click", goTo);
+    });
+</script>
