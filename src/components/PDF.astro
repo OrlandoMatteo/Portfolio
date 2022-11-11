@@ -1,0 +1,18 @@
+---
+import pdfIcon from "/PDF_icon.png";
+---
+
+<button class="hint" title="Click here to download the pdf version"
+    ><img class="icon" src={pdfIcon} />
+</button>
+
+<script>
+    import pdf from "/cv_matteo_orlando.pdf";
+    function downloadPDF() {
+        window.open(pdf);
+    }
+
+    document
+        .getElementsByClassName("hint")[0]
+        .addEventListener("click", downloadPDF);
+</script>
