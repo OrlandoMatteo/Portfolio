@@ -302,8 +302,8 @@ const { title } = Astro.props as Props;
                 bottom: 2%;
                 right: 2%;
                 z-index: 1;
-                background-color: var(--secondary);
-                border: solid 0.2rem var(--secondary);
+                background-color: white;
+                border: solid 0.2rem white;
                 border-radius: 50%;
                 width: 3rem;
                 height: 3rem;
@@ -314,7 +314,7 @@ const { title } = Astro.props as Props;
             .hint:hover {
                 background-color: var(--primary);
                 border: solid 0.2rem var(--primary);
-                box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+                box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.6);
                 color: #000;
                 transform: translateY(-7px);
             }
@@ -322,6 +322,21 @@ const { title } = Astro.props as Props;
                 border: 0;
                 width: 2rem;
                 height: 2rem;
+            }
+            @media print and (color) {
+                .name-gradient {
+                    -webkit-text-fill-color: var(--primary) !important;
+                    background: none;
+                }
+                .navbar {
+                    display: none;
+                }
+                .hint {
+                    display: none;
+                }
+                .icon {
+                    display: none;
+                }
             }
         </style>
     </body>
