@@ -2,8 +2,8 @@
 const items = ["Whoami", "Career", "Publications", "Projects"];
 ---
 
-<button class="openbtn"><h2>&#9776 Menu</h2></button>
 <div class="navbar container">
+    <button class="openbtn"><h2>&#9776 Menu</h2></button>
     {
         items.map((item) => (
             <div id={item} class="nav-item">
@@ -26,8 +26,10 @@ const items = ["Whoami", "Career", "Publications", "Projects"];
     document
         .getElementsByClassName("openbtn")[0]
         .addEventListener("click", function () {
-            var navbar = document.getElementsByClassName("navbar")[0];
-            navbar.style.display = navbar.style.display === "" ? "inline" : "";
-            console.log(navbar.style.display);
+            var items = document.getElementsByClassName("nav-item");
+            Array.from(items).forEach(function (item) {
+                item.style.display = item.style.display === "" ? "inline" : "";
+                console.log(item.style.display);
+            });
         });
 </script>
